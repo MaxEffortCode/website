@@ -18,7 +18,9 @@ def hello2(name=None):
 
 
 @app.route('/index/')
-@app.route('/index/*')
+
+
+@app.route('/static/')
 
 @app.route('/generic/')
 @app.route('/elements/')
