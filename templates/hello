@@ -12,7 +12,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 		<link rel="index" href="{{ url_for('index', filename='index.html') }}">
-		<img src="{{url_for('static', filename='pic01.jpg')}}" />
+
 
 		<noscript><link rel="stylesheet" href="noscript.css" /></noscript>
 	</head>
@@ -24,9 +24,9 @@
 				<!-- Intro -->
 					<div id="intro">
 						<h1>This is<br />
-						Massively</h1>
-						<p>A free, fully responsive HTML5 + CSS3 site template designed by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a><br />
-						and released for free under the <a href="https://html5up.net/license">Creative Commons license</a>.</p>
+						literal Cock and Ball Torture</h1>
+						<p>Please... No more &#x1F62B; &#x1F62B; &#x1F62B; &#x1F62B; &#x1F62B;<a href="https://twitter.com/ajlkn">@yourMom</a><a href="https://html5up.net">&#x1F62B</a><br />
+						 the pain... it's unbearable <a href="https://html5up.net/license"></a>.</p>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
@@ -34,7 +34,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="hello.html" class="logo">Massively</a>
+						<a href="hello.html" class="logo">AHHHHHHHHH</a>
 					</header>
 
 				<!-- Nav -->
@@ -65,7 +65,7 @@
 								</header>
 								<a href="#" class="image main"><img src="{{url_for('static', filename='pic01.jpg')}}" /></a>
 								<ul class="actions special">
-									<li><a href="#" class="button large">Full Story</a></li>
+									<li><a href="#" class="button large">BOTTOM TEXT</a></li>
 								</ul>
 							</article>
 
@@ -219,13 +219,13 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="jquery.min.js"></script>
-			<script src="jquery.scrollex.min.js"></script>
-			<script src="jquery.scrolly.min.js"></script>
-			<script src="browser.min.js"></script>
-			<script src="breakpoints.min.js"></script>
-			<script src="util.js"></script>
-			<script src="main.js"></script>
+			<script src="{{url_for('static', filename='jquery.min.js')}}"></script>
+			<script src="{{url_for('static', filename='jquery.scrollex.min.js')}}"></script>
+			<script src="{{url_for('static', filename='jquery.scrolly.min.js')}}"></script>
+			<script src="{{url_for('static', filename='browser.min.js')}}"></script>
+			<script src="{{url_for('static', filename='breakpoints.min.js')}}"></script>
+			<script src="{{url_for('static', filename='util.js')}}"></script>
+			<script src="{{url_for('static', filename='main.js')}}"></script>
 
 	</body>
 </html>
