@@ -12,6 +12,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 		<link rel="index" href="{{ url_for('index', filename='index.html') }}">
+		<img src="{{url_for('static', filename='pic01.jpg')}}" />
 
 		<noscript><link rel="stylesheet" href="noscript.css" /></noscript>
 	</head>
@@ -33,7 +34,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">Massively</a>
+						<a href="hello.html" class="logo">Massively</a>
 					</header>
 
 				<!-- Nav -->
@@ -57,14 +58,12 @@
 						<!-- Featured Post -->
 							<article class="post featured">
 								<header class="major">
-									<span class="date">April 25, 2017</span>
-									<h2><a href="#">And this is a<br />
-									massive headline</a></h2>
-									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-									amet nullam sed etiam veroeros.</p>
+									<span class="date">September 11, 2001</span>
+									<h2><a href="#">Cock...<br />
+									Balls even</a></h2>
+									<p>asdaskldmjaskldjlasjdkljasdklasjkldjaskljaskljaskljsdgkighsweuigh.</p>
 								</header>
-								<a href="#" class="image main"><img src="pic01.jpg" alt="" /></a>
+								<a href="#" class="image main"><img src="{{url_for('static', filename='pic01.jpg')}}" /></a>
 								<ul class="actions special">
 									<li><a href="#" class="button large">Full Story</a></li>
 								</ul>
@@ -102,7 +101,7 @@
 										<h2><a href="#">Ante mattis<br />
 										interdum dolor</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="pic04.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="pic01.jpg" alt="" /></a>
 									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
 									<ul class="actions special">
 										<li><a href="#" class="button">Full Story</a></li>
