@@ -1,6 +1,7 @@
 import click
 from flask import Flask
 from gevent.pywsgi import WSGIServer
+from flask import render_template
 
 app = Flask(__name__)
 
@@ -13,10 +14,15 @@ def index():
 @click.option('--count', default=1, help='Number of greetings.')
 @click.option('--name', prompt='Your name',
               help='The person to greet.')
-def hello(count, name):
-    """Simple program that greets NAME for a total of COUNT times."""
-    for x in range(count):
-        click.echo(f"Hello {name}!")
+@app.route('/hello/')
+@app.route('/hello/<name>')
+@app.route('/index/')
+@app.route('/index/*')
+
+def hello(name=None):
+    return render_template('hello.html', name=name)
+
+
 
 
 if __name__ == '__main__':
@@ -25,6 +31,7 @@ if __name__ == '__main__':
     # Production
     http_server = WSGIServer(('', 5000), app)
     hello()
+
     http_server.serve_forever()
 
 
