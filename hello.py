@@ -17,13 +17,18 @@ def hello2(name=None):
 
 
 
-@app.route('/index/')
+
 
 
 @app.route('/static/')
 
-@app.route('/generic/')
+@app.route('/generic/', methods=['GET'])
+def generic(name=None):
+    return render_template('generic.html', name=name)
+
 @app.route('/elements/')
+def elements(name=None):
+    return render_template('elements.html', name=name)
 
 
 
